@@ -1,7 +1,16 @@
 #include <iostream>
 #include "task5_pascal.h"
 
+// Test cases
+void testPascal() {
+    auto tri = generatePascal(5);
+    for (auto& row : tri) {
+        for (int val : row) cout << val << " ";
+        cout << endl;
+    }
+}
+
 int main() {
-    std::cout << "Running Task 5 tests (placeholder)..." << std::endl;
+    testPascal();
     return 0;
 }
